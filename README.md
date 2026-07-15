@@ -109,3 +109,13 @@ After estimating the required number of hosts, I used Variable Length Subnet Mas
 | src/devices | Smart device simulation |
 | src/protocol | HTTP-like communication protocol |
 | tests | Unit tests |
+
+
+## Reflection
+
+## What I Learned
+
+
+## Skills Demonstrated
+
+## Future Improvements
