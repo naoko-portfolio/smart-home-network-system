@@ -40,7 +40,7 @@ I designed the network architecture shown below.
 
 
 
-## Network Design
+## Network Overview
 
 This project uses **Variable Length Subnet Masking (VLSM)** to efficiently allocate IP address ranges based on the expected number of devices in each subnet.
 
@@ -79,7 +79,7 @@ This project uses **Variable Length Subnet Masking (VLSM)** to efficiently alloc
 
 
 ## Design Process
-### How to design networking
+### Network Design Process
 1. Started with the base network 192.168.1.0/24.
 2. Estimated the required number of hosts for each subnet.
 3. Applied VLSM (Variable Length Subnet Masking) to calculate subnet sizes.
