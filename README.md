@@ -122,10 +122,41 @@ After calculating the subnet sizes, I assigned IP address ranges to each subnet 
 
 
 ## Reflection
+This was my first time designing a network architecture for a practical project. At first, I found it difficult to divide the original IP address range into multiple subnets while making sure that each device group had enough usable host addresses.
+
+However, as I worked through the calculations step by step, I began to understand how the subnet sizes, network addresses, usable host ranges, and broadcast addresses were connected. When I finally completed the IP addressing plan and saw the full network structure come together, I felt a strong sense of clarity and achievement.
+
+This experience showed me that network design can feel complicated at first, but breaking the problem into smaller steps makes it much easier to understand.
+
 
 ## What I Learned
+Through this project, I learned how to plan and allocate IP addresses based on the number of devices required in each network segment. I also developed a clearer understanding of VLSM, including what it is, why it is used, and how it improves the efficiency of IP address allocation.
+
+Instead of assigning the same subnet size to every device group, I used different CIDR prefixes based on the expected number of hosts. This allowed the lighting network to receive a larger subnet, while the thermostat, security, and management networks received smaller subnets that matched their needs.
+
+I also learned that drawing the network architecture helps make the design easier to understand. Creating the topology by hand first allowed me to organize my ideas, check the relationships between the router, server, client, and device subnets, and identify mistakes before creating the final diagram in Figma.
+
+This project made me more interested in network architecture because I enjoyed turning calculations into a clear and organized network design.
 
 
 ## Skills Demonstrated
 
+- Network Architecture Design
+- IPv4 Addressing
+- VLSM (Variable Length Subnet Masking)
+- Subnetting
+- CIDR Notation
+- IP Address Planning
+- TCP/IP Networking
+- Static Routing
+- Network Topology Design
+- Figma (Network Diagram)
+- C++
+- TCP Socket Programming
+- Multithreaded Client-Server Architecture
+- Git & GitHub
+
+
 ## Future Improvements
+
+In future projects, I would like to design a larger network that integrates cloud services such as AWS. I also want to gain more experience with routing, VLANs, firewalls, and hybrid cloud networking to build more realistic and scalable network architectures.
