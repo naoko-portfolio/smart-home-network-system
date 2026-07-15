@@ -1,6 +1,8 @@
 
 # Smart Home Network Automation System
-**Team Project (3 members)**
+> **Team Project (3 members)**
+
+My primary responsibility was designing the network architecture, including VLSM subnetting, IP addressing, router interface planning, and network documentation. The TCP client-server implementation and device simulation were developed collaboratively by the team.
 
 
 ## Overview
@@ -96,5 +98,14 @@ I separated the network into multiple subnets based on device functions instead 
 After estimating the required number of hosts, I used Variable Length Subnet Masking (VLSM) to allocate different subnet sizes. The lighting network received a /26 subnet because it required the largest number of hosts, while the thermostat and security networks used /27 subnets. This allowed efficient use of the available IP address space.
 
 
-## Screenshots
-## GitHub
+## Repository Structure
+
+| Folder | Description |
+|---------|-------------|
+| include | Header files |
+| src/client | Client implementation |
+| src/server | Multithreaded TCP server |
+| src/network | Network configuration and subnet management |
+| src/devices | Smart device simulation |
+| src/protocol | HTTP-like communication protocol |
+| tests | Unit tests |
