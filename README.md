@@ -82,18 +82,18 @@ This project uses **Variable Length Subnet Masking (VLSM)** to efficiently alloc
 5. Created the final network topology in Figma.
 
 **Step 1 - Planning the Network**
-<img width="1500" height="2000" alt="1" src="https://github.com/user-attachments/assets/0041e5af-bb87-4dc1-8eae-378d98e4c853" />
+<img width="600" alt="1" src="https://github.com/user-attachments/assets/0041e5af-bb87-4dc1-8eae-378d98e4c853" />
 
 I started with a private IPv4 network (192.168.1.0/24) because it is commonly used for local area networks. I estimated the number of devices required for each category (lighting, thermostat, and security) before designing the subnet layout. This planning helped determine the appropriate subnet sizes while leaving room for future expansion.
 
 **Step 2 - Designing the Subnets**
-<img width="1500" height="2000" alt="2" src="https://github.com/user-attachments/assets/37c664c5-38a7-4e37-b6a3-c908e21c3754" />
+<img width="600" alt="2" src="https://github.com/user-attachments/assets/37c664c5-38a7-4e37-b6a3-c908e21c3754" />
 
 I separated the network into multiple subnets based on device functions instead of placing every device in the same network. This approach improves network organization, reduces unnecessary broadcast traffic, and makes it easier to manage each device group independently.
 
 
 **Step 3 - VLSM Calculation**
-<img width="1500" height="2000" alt="3" src="https://github.com/user-attachments/assets/ee5bf21d-a1b0-4099-8994-947d4c5a851d" />
+<img width="600" alt="3" src="https://github.com/user-attachments/assets/ee5bf21d-a1b0-4099-8994-947d4c5a851d" />
 
 After estimating the required number of hosts, I used Variable Length Subnet Masking (VLSM) to allocate different subnet sizes. The lighting network received a /26 subnet because it required the largest number of hosts, while the thermostat and security networks used /27 subnets. This allowed efficient use of the available IP address space.
 
